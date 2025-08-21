@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green_a"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SyzarSoft Store"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/img_success"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@android:drawable/checkbox_on_background"
+            android:contentDescription="Payment successful"
+            android:background="#E6F7EE"
+            android:padding="24dp" />
+
+        <TextView
+            android:id="@+id/tv_title_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Successful!"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#111827"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_sub_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you for your purchase."
+            android:textSize="14sp"
+            android:textColor="#374151"
+            android:layout_marginTop="6dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_back_to_products"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Back to Products"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="#2563EB" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

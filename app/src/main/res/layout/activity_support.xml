@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/tv_title_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ . Support"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#111827" />
+
+        <TextView
+            android:id="@+id/tv_sub_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Common questions about activation keys"
+            android:textSize="13sp"
+            android:textColor="#374151"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/faq_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FAFB"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are the keys genuine and one-time?"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111827" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Yes. All keys are original, for a single device unless specified (Retail/OEM/Subscription)."
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <Space android:layout_width="1dp" android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FAFB"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How do I receive the activation key?"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111827" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="You receive the key immediately on the payment success screen and via email if you provide one."
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <Space android:layout_width="1dp" android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FAFB"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key doesn’t work / activation failed?"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111827" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Check internet connection, region, edition match (Pro vs Home), and try the troubleshooter. If it still fails, contact us with your order details."
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <Space android:layout_width="1dp" android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FAFB"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Can keys be reused after formatting?"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111827" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Retail keys can usually be reactivated on the same device. OEM keys are tied to the first device."
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <Space android:layout_width="1dp" android:layout_height="12dp"/>
+
+            <LinearLayout
+                android:id="@+id/card_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F4F6"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tv_contact_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Support"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111827" />
+
+                <TextView
+                    android:id="@+id/tv_contact_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="syzarsoft0@gmail.com"
+                    android:textSize="14sp"
+                    android:textColor="#2563EB"
+                    android:autoLink="email"
+                    android:linksClickable="true" />
+
+                <TextView
+                    android:id="@+id/tv_contact_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+972598656034"
+                    android:textSize="14sp"
+                    android:textColor="#2563EB"
+                    android:autoLink="phone"
+                    android:linksClickable="true" />
+
+                <TextView
+                    android:id="@+id/tv_contact_whatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="https://wa.me/972598656034"
+                    android:textSize="14sp"
+                    android:textColor="#2563EB"
+                    android:autoLink="web"
+                    android:linksClickable="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/about_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="42dp"
+                    android:text="Back to Products"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@color/blue"
+
+                    android:stateListAnimator="@null" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

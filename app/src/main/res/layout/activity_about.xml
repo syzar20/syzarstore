@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/tv_about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About SyzarSoft Store"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#111827" />
+
+        <TextView
+            android:id="@+id/tv_about_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast. Secure. Genuine activation keys."
+            android:textSize="13sp"
+            android:textColor="#374151"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/about_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FAFB"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/office"
+                        android:contentDescription="SyzarSoft"
+                        android:background="#F3F4F6"
+                        android:padding="6dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="SyzarSoft Store"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#111827" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_about_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="We provide genuine activation keys for Windows, Office, and security suites at fair prices. Instant delivery, simple checkout, and friendly support."
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="• Original keys • Instant delivery\n• Clear pricing • Helpful support"
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+            </LinearLayout>
+
+            <Space android:layout_width="1dp" android:layout_height="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F9FAFB"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tv_about_links"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get in touch"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#111827" />
+
+                <TextView
+                    android:id="@+id/tv_about_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Email: syzarsoft0@gmail.com"
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tv_about_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: +972598656034"
+                    android:textSize="14sp"
+                    android:textColor="#374151" />
+
+                <TextView
+                    android:id="@+id/tv_about_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Website: https://syzar20.github.io/syzarss/"
+                    android:textSize="14sp"
+                    android:textColor="#2563EB"
+                    android:autoLink="web"
+                    android:linksClickable="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/about_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_about_back"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Back to Products"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+
+            android:stateListAnimator="@null" />
+    </LinearLayout>
+</LinearLayout>

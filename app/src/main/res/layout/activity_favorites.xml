@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:background="@color/green_a"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/tv_fav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorites"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/favoritesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@android:drawable/divider_horizontal_bright"
+            android:dividerPadding="8dp">
+
+            <LinearLayout
+                android:id="@+id/fav_windows11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="top">
+
+                    <ImageView
+                        android:id="@+id/img_fav_windows11"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:src="@drawable/windows"
+                        android:contentDescription="Windows 11 Pro"
+                        android:scaleType="centerCrop"
+                        android:background="#F3F4F6"
+                        android:padding="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <TextView
+                            android:id="@+id/title_fav_windows11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:paddingVertical="8dp"
+                            android:text="Windows 11 Pro - Genuine Key"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc_fav_windows11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Instant Activation • 1 Device"
+                            android:textColor="#374151"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/price_fav_windows11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price: $19.99"
+                            android:textColor="#0B8F6A"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ic_heart_win11"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/btn_star_big_on"
+                        android:contentDescription="favorited"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/btn_remove_win11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Remove"
+                        android:textAllCaps="false"
+                        android:textColor="#DC2626"
+                        android:background="?attr/selectableItemBackground"
+                        android:stateListAnimator="@null" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="1dp" />
+
+                    <Button
+                        android:id="@+id/btn_buy_win11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Buy Now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="#2563EB" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fav_office2024"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="top">
+
+                    <ImageView
+                        android:id="@+id/img_fav_office"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:src="@drawable/office2"
+                        android:contentDescription="Office 2024 Pro Plus"
+                        android:scaleType="centerCrop"
+                        android:background="#F3F4F6"
+                        android:padding="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <TextView
+                            android:id="@+id/title_fav_office"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:paddingVertical="8dp"
+                            android:text="Office 2024 Pro Plus - Lifetime Key"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc_fav_office"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Word • Excel • PowerPoint"
+                            android:textColor="#374151"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/price_fav_office"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price: $24.99"
+                            android:textColor="#0B8F6A"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/btn_star_big_on"
+                        android:contentDescription="favorited" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/btn_remove_office"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Remove"
+                        android:textAllCaps="false"
+                        android:textColor="#DC2626"
+                        android:background="?attr/selectableItemBackground"
+                        android:stateListAnimator="@null" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="1dp" />
+
+                    <Button
+                        android:id="@+id/btn_buy_office"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Buy Now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="#2563EB" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fav_avg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="top">
+
+                    <ImageView
+                        android:id="@+id/img_fav_avg"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:src="@drawable/defender"
+                        android:contentDescription="AVG Ultimate"
+                        android:scaleType="centerCrop"
+                        android:background="#F3F4F6"
+                        android:padding="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <TextView
+                            android:id="@+id/title_fav_avg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:paddingVertical="8dp"
+                            android:text="AVG Ultimate - 1 Year"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc_fav_avg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Multi-device Protection"
+                            android:textColor="#374151"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/price_fav_avg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price: $14.99"
+                            android:textColor="#0B8F6A"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/btn_star_big_on"
+                        android:contentDescription="favorited" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/btn_remove_avg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Remove"
+                        android:textAllCaps="false"
+                        android:textColor="#DC2626"
+                        android:background="?attr/selectableItemBackground"
+                        android:stateListAnimator="@null" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="1dp" />
+
+                    <Button
+                        android:id="@+id/btn_buy_avg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Buy Now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="#2563EB" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fav_win10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="top">
+
+                    <ImageView
+                        android:id="@+id/img_fav_win10"
+                        android:layout_width="84dp"
+                        android:layout_height="84dp"
+                        android:src="@drawable/windows2"
+                        android:contentDescription="Windows 10 Pro"
+                        android:scaleType="centerCrop"
+                        android:background="#F3F4F6"
+                        android:padding="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp">
+
+                        <TextView
+                            android:id="@+id/title_fav_win10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:paddingVertical="8dp"
+                            android:text="Windows 10 Pro - Genuine Key"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/desc_fav_win10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Instant Activation • 1 Device"
+                            android:textColor="#374151"
+                            android:textSize="13sp"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/price_fav_win10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price: $29.99"
+                            android:textColor="#0B8F6A"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/btn_star_big_on"
+                        android:contentDescription="favorited" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/btn_remove_win10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Remove"
+                        android:textAllCaps="false"
+                        android:textColor="#DC2626"
+                        android:background="?attr/selectableItemBackground"
+                        android:stateListAnimator="@null" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="1dp" />
+
+                    <Button
+                        android:id="@+id/btn_buy_win10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:paddingHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:text="Buy Now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="#2563EB" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_back_to_products"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Back to Products"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="#2563EB"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
