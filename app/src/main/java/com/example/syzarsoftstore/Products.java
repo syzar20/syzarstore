@@ -28,9 +28,18 @@ public class Products extends AppCompatActivity {
         });
 
         Button buy = findViewById(R.id.btn_buy_windows11);
-        Button buy2 = findViewById(R.id.btn_buy_office2021);
-        Button buy3 = findViewById(R.id.btn_buy_kaspersky);
-        Button buy4 = findViewById(R.id.btn_buy_m365);
+        Button buy2 = findViewById(R.id.btn_buy_office2024);
+        Button buy3 = findViewById(R.id.btn_buy_avg);
+        Button buy4 = findViewById(R.id.btn_buy_windows10);
+
+
+
+        Button buy5 = findViewById(R.id.btn_fav_windows11);
+        Button buy6 = findViewById(R.id.btn_fav_office2024);
+        Button buy7 = findViewById(R.id.btn_fav_avg);
+        Button buy8 = findViewById(R.id.btn_fav_windows10);
+
+
 
         ImageView img = findViewById(R.id.img_windows11);
         ImageView img2 = findViewById(R.id.img_office2024);
@@ -76,6 +85,39 @@ public class Products extends AppCompatActivity {
             public void onClick(View v) {
                 Intent by4 = new Intent(Products.this, pay.class);
                 startActivity(by4);
+            }
+        });
+
+
+        buy5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent by5 = new Intent(Products.this, Favorites.class);
+                startActivity(by5);
+            }
+        });
+
+        buy6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent by6 = new Intent(Products.this, Favorites.class);
+                startActivity(by6);
+            }
+        });
+
+        buy7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent by7 = new Intent(Products.this, Favorites.class);
+                startActivity(by7);
+            }
+        });
+
+        buy8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent by8 = new Intent(Products.this, Favorites.class);
+                startActivity(by8);
             }
         });
 

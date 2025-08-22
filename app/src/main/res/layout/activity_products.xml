@@ -129,14 +129,14 @@
                         android:id="@+id/btn_fav_windows11"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
                         android:minHeight="48dp"
                         android:paddingHorizontal="12dp"
-                        android:layout_weight="1"
+                        android:stateListAnimator="@null"
                         android:text="Add to Favorites"
                         android:textAllCaps="false"
-                        android:textColor="@color/blue"
-                        android:background="?attr/selectableItemBackground"
-                        android:stateListAnimator="@null" />
+                        android:textColor="@color/blue" />
 
                     <Space
                         android:layout_width="8dp"
@@ -191,7 +191,7 @@
                         android:paddingStart="12dp">
 
                         <TextView
-                            android:id="@+id/title_office2021"
+                            android:id="@+id/title_office2024"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:minHeight="48dp"
@@ -204,7 +204,7 @@
                             android:focusable="true" />
 
                         <TextView
-                            android:id="@+id/desc_office2021"
+                            android:id="@+id/desc_office2024"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Word • Excel • PowerPoint"
@@ -232,24 +232,24 @@
                     android:layout_marginTop="8dp">
 
                     <Button
-                        android:id="@+id/btn_fav_office2021"
+                        android:id="@+id/btn_fav_office2024"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackground"
                         android:minHeight="48dp"
                         android:paddingHorizontal="12dp"
-                        android:layout_weight="1"
+                        android:stateListAnimator="@null"
                         android:text="Add to Favorites"
                         android:textAllCaps="false"
-                        android:textColor="@color/blue"
-                        android:background="?attr/selectableItemBackground"
-                        android:stateListAnimator="@null" />
+                        android:textColor="@color/blue" />
 
                     <Space
                         android:layout_width="8dp"
                         android:layout_height="1dp" />
 
                     <Button
-                        android:id="@+id/btn_buy_office2021"
+                        android:id="@+id/btn_buy_office2024"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:minHeight="48dp"
@@ -297,7 +297,7 @@
                         android:paddingStart="12dp">
 
                         <TextView
-                            android:id="@+id/title_kaspersky"
+                            android:id="@+id/title_avg"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:minHeight="48dp"
@@ -310,13 +310,13 @@
                             android:focusable="true" />
 
                         <TextView
-                            android:id="@+id/desc_kaspersky"
+                            android:id="@+id/desc_avg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
                             android:text="Multi-device Protection"
                             android:textColor="#374151"
-                            android:textSize="13sp"
-                            android:layout_marginTop="4dp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:id="@+id/price_kaspersky"
@@ -338,7 +338,7 @@
                     android:layout_marginTop="8dp">
 
                     <Button
-                        android:id="@+id/btn_fav_kaspersky"
+                        android:id="@+id/btn_fav_avg"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:minHeight="48dp"
@@ -355,7 +355,7 @@
                         android:layout_height="1dp" />
 
                     <Button
-                        android:id="@+id/btn_buy_kaspersky"
+                        android:id="@+id/btn_buy_avg"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:minHeight="48dp"
@@ -403,7 +403,7 @@
                         android:paddingStart="12dp">
 
                         <TextView
-                            android:id="@+id/title_m365"
+                            android:id="@+id/title_windows10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:minHeight="48dp"
@@ -416,16 +416,16 @@
                             android:focusable="true" />
 
                         <TextView
-                            android:id="@+id/desc_m365"
+                            android:id="@+id/desc_windows10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="1TB OneDrive • Multi-device"
+                            android:text="Instant Activation • 1 Device"
                             android:textColor="#374151"
                             android:textSize="13sp"
                             android:layout_marginTop="4dp" />
 
                         <TextView
-                            android:id="@+id/price_m365"
+                            android:id="@+id/price_windows10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Price: $29.99"
@@ -444,7 +444,7 @@
                     android:layout_marginTop="8dp">
 
                     <Button
-                        android:id="@+id/btn_fav_m365"
+                        android:id="@+id/btn_fav_windows10"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:minHeight="48dp"
@@ -461,7 +461,7 @@
                         android:layout_height="1dp" />
 
                     <Button
-                        android:id="@+id/btn_buy_m365"
+                        android:id="@+id/btn_buy_windows10"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:minHeight="48dp"

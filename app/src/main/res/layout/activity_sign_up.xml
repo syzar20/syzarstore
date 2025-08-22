@@ -38,7 +38,8 @@
                 android:text="Create Account"
                 android:textColor="@color/black"
                 android:textSize="22sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
 
 
@@ -186,11 +187,11 @@
                     android:id="@+id/btn_google"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:minHeight="48dp"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:drawableStart="@android:drawable/ic_menu_search"
                     android:drawablePadding="8dp"
+                    android:minHeight="48dp"
                     android:text="Continue with Google"
                     android:textAllCaps="false"
                     android:textColor="#111827" />
